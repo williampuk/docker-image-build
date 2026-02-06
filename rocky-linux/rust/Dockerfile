@@ -1,7 +1,7 @@
 FROM rockylinux:9
 
 # System dependencies for Rust + bindgen
-RUN dnf -y install \
+RUN dnf -y --allowerasing --best install \
     clang \
     clang-devel \
     llvm-devel \
